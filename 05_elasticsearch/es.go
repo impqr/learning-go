@@ -7,7 +7,9 @@ import (
 
 func main() {
 	es, _ := elasticsearch.NewClient(config)
-	log.Println(es.Info())
+	ping, _ := es.Ping()
+	defer ping.Body.Close()
+	log.Println(ping)
 }
 
 var config = elasticsearch.Config{
