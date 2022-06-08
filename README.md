@@ -80,3 +80,9 @@ RSA秘钥对生成和加解密示例。
 ## 10_email
 
 使用gomail实现发送邮件。相对而言比较简单。
+
+
+
+## 11_yaml
+
+使用gopkg.in/yaml.v3读取yaml配置文件； 使用fasthttp构建一个HTTP客户端，可用于测试QPS

@@ -1,0 +1,17 @@
+server:
+  address: 127.0.0.1
+  port: 8080
+
+http:
+  # 请求客户端控制参数
+  readTimeout: 500ms
+  writeTimeout: 500ms
+  maxIdleConnDuration: 3s
+
+  # 并发控制相关参数
+  concurrent: 16
+  limit: -1
+  loop: 10000
+
+  # 任务等待时间
+  wait: 10
